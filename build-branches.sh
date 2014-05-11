@@ -31,7 +31,7 @@ do
     popd
 
     #echo $VERSION
-    ./make_deb.sh
+    ./make_deb.sh --publish
     ./make_deb.sh --clean
 
     echo $THIS_HASH > last_hash_${branch}

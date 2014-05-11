@@ -10,7 +10,7 @@ function generate_changelog() {
   sed -i -e '/automatically created by stdeb/d' debian/changelog
 }
 
-dists=(trusty)
+dists=(lucid precise saucy trusty)
 
 args=$(getopt -l "publish,clean" -o "pc" -- "$@")
 
@@ -95,7 +95,7 @@ do
   then
     pushd ..
     echo -e "\e[00;31m***** Publishing package for ${dist} *****\e[00m"
-    dput ppa:lunch-team/lunchinator lunchinator_*.changes
+    dput ppa:lunch-team/lunchinator lunchinator*.changes
     popd
   fi
   popd
