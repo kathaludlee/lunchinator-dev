@@ -10,19 +10,19 @@
 <header>
 <a href="#story">The Story</a>
 <a href="#features">Features</a>
-<a><img alt ="Lunchinator logo in a circle" src="img/lunchinator-circle.png"/></a>
+<a class="hideme"><img alt ="Lunchinator logo in a circle" src="img/lunchinator-circle.png"/></a>
 <a href="#howto">How to</a>
 <a href="#who">Who made it</a>
 </header>
 <div id="main">
 <article>
-<div class="block column">
+<div class="introduction">
+<img class="svgimg" alt="Lunchinator logo - a knife that crosses a fork" src="img/lunchinatorred.svg" onerror="this.onerror=null; this.src='lunchinatorred.png'"/>
+</div>
+<div>
 <h1>Lunchinator</h1>
 <p>A lightweight tool that will help you get everyone to lunch - in nearly no time at all. No more excruciating waiting at your colleagues doors. Just click and go.</p>
-<p>Download the installers or follow instructions on how to use the Linux packages.</p>
-</div>
-<div class="block column">
-<img class="svgimg" alt="Lunchinator logo - a knife that crosses a fork" src="img/lunchinatorred.svg" onerror="this.onerror=null; this.src='lunchinatorred.png'"/>
+<p>Download the installers for Windows or Mac OS, or follow instructions on how to use the Linux packages.</p>
 </div>
 <div>
 <a href="http://update.lunchinator.de/mac/"><div class="button block" id="mac"><span></span><span>Mac OS</span></div></a>
@@ -74,8 +74,8 @@ Add the lunchinator ppa:<br/>
 <li>Install the Lunchinator: `sudo zypper install lunchinator`</li></ul></li>
 <li>Other Systems that support python:<br/>
 Run the python files directly:<br/>
- git clone https://github.com/hannesrauhe/lunchinator.git<br/>
- python lunchinator/start_lunchinator.py</li>
+ <span class="break">git clone https://github.com/hannesrauhe/lunchinator.git</span><br/>
+ <span class="break">python lunchinator/start_lunchinator.py</span></li>
  </ul>
  <p> You can also just download the files from the github-page. You need python and pyqt4. For full functionality more python packages are needed. The lunchinator will install them automatically via easy_install if you want to.</p>
 <h3>Use / Specifications</h3>
