@@ -24,10 +24,9 @@ header a {line-height: 40px; margin: 0px 15px; color: #df382c; text-decoration: 
 #main {background: #fff7e1; width: 800px; margin: 0 auto; padding: 50px;}
 
 .block {display: inline-block; vertical-align: top;}
-.column{width: 40%;}
-.column:first-of-type {margin-right: 15%;}
+.introduction{width: 40%; float: right; margin-left: 15%;}
 
-.svgimg {width: 100%;}
+.svgimg {width: 100%; margin-top: -10%;}
 .break {word-wrap: break-word;}
 
 .button {height: 26px; width: 100px; padding: 7px; margin-right: 10px;}
@@ -46,3 +45,16 @@ header a {line-height: 40px; margin: 0px 15px; color: #df382c; text-decoration: 
 #linux:hover span:first-of-type {background: url(img/linux-iconH.png);}
 
 footer {margin: 30px 0px; text-align: center;}
+
+/**** Media Queries ****/
+
+@media (max-width: 940px){
+#main {width: 85%; padding: 5%}
+.introduction {float: none; margin: 0 auto;}
+.hideme {display: none;}
+header a {margin: 0 2%;}
+}
+
+@media (max-width: 450px){
+h1 {font-size: 22pt;}
+}
